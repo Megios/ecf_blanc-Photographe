@@ -13,10 +13,11 @@ const Header = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: colum;
-  align-item: center;
-  background: #fff;
-  border: 1px solid #ccc;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  font-family: "font-1";
 `;
 
 export default Header;
