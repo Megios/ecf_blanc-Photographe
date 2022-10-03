@@ -17,7 +17,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background: transparent;
-  font-family: "font-1";
 `;
 
 export default Header;

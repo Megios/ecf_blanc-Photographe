@@ -6,17 +6,26 @@ const Navigation = () => {
   return (
     <Nav>
       <List>
-        <NavLink to="/">
+        <NavLink
+          to="/accueil"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
           <Li>Accueil</Li>
         </NavLink>
-        <NavLink to="/galerie">
+        <NavLink
+          to="/galerie"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
           <Li>Galerie</Li>
         </NavLink>
-        <NavLink to="/offres">
+        <NavLink
+          to="/offres"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
           <Li>Offres</Li>
         </NavLink>
-        <NavLink to="/">
-          <Li>Store</Li>
+        <NavLink to="/accueil">
+          <Li>Contact</Li>
         </NavLink>
       </List>
     </Nav>
@@ -25,11 +34,25 @@ const Navigation = () => {
 const Li = styled.li`
   list-style-type: none;
   font-size: 2rem;
+  transition: 0.2s;
+  &:hover {
+    color: #152028;
+  }
 `;
 const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  a {
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .nav-active {
+    background: rgba(255, 255, 255, 0.4);
+  }
 `;
 const List = styled.ul`
   display: flex;

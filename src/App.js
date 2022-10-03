@@ -10,10 +10,10 @@ const App = () => {
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/galerie" element={<Galerie />} />
         <Route path="/offres" element={<Offre />} />
         <Route path="*" element={<Home />} />
+        <Route path="/accueil" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     background:#47555E;
+  }
+  h2,h1,h3,p,li{
+    font-family: 'font-1';
+    color:color: #f6efef;
+    color: white;
   }
 `;
 export default App;

@@ -22,7 +22,6 @@ const HeaderA = styled.div`
   align-items: center;
   background: transparent;
   width: 100vw;
-  font-family: "font-1";
 `;
 const Accueil = styled.div`
   display: flex;
@@ -31,8 +30,6 @@ const Accueil = styled.div`
   background: center/cover url(${img});
   align-items: center;
   overflow: hidden;
-  font-family: "font-1";
-  color: #f6efef;
 `;
 
 export default Home;

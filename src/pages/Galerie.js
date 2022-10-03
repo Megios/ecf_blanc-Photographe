@@ -11,8 +11,6 @@ const Galerie = () => {
   );
 };
 const Wrapper = styled.div`
-  font-family: "font-1";
   text-align: center;
-  color: #f6efef;
 `;
 export default Galerie;

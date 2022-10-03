@@ -1,0 +1,34 @@
+{
+  "prestations": [
+    {
+      "title": "Juste pour moi",
+      "content": "Séance pour une personne, en extérieur ou en studio",
+      "tarif": "130 euros"
+    },
+    {
+      "title": "Pour deux",
+      "content": "Pour deux personnes, en extérieur ou en studio",
+      "tarif": "195 euros"
+    },
+    {
+      "title": "Famille",
+      "content": "Pour la famille ou les amis jusqu'a 4 personnes, en extérieur ou en studio, 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu'a 2 ans)",
+      "tarif": "220 euros"
+    },
+    {
+      "title": "Il était une fois",
+      "content": "Photo de grossesse (À votre domicile, en extérieur ou en studio)",
+      "tarif": "160 euros"
+    },
+    {
+      "title": "Mon bébé",
+      "content": "Photo d'enfant jusqu'à 3 ans (photo à domicile)",
+      "tarif": "100 euros"
+    },
+    {
+      "title": "J'immortalise l'évènement",
+      "content": "Perstation de mariage ou baptême sur devis",
+      "tarif": "Sur mesure"
+    }
+  ]
+}

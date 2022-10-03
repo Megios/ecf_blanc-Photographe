@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
+import Prestation from "../components/Prestation";
+import axios from "axios";
 const Offre = () => {
+  const [offres, setOffres] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3200/prestations")
+      .then((res) => setOffres(res.data));
+  }, []);
   return (
     <Wrapper>
       <Header />
       <h1>Offre</h1>
+      {offres.map((prestation) => (
+        <Prestation objet={prestation} />
+      ))}
     </Wrapper>
   );
 };
 const Wrapper = styled.div`
   font-family: "font-1";
   text-align: center;
-  color: #f6efef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 export default Offre;
