@@ -30,5 +30,19 @@
       "content": "Perstation de mariage ou baptême sur devis",
       "tarif": "Sur mesure"
     }
+  ],
+  "photos": [
+    {
+      "id": "zd45zaza424az7357",
+      "title": "Un titre",
+      "source": "./img/photo1",
+      "categories": ["Grossesse", "Famille"]
+    },
+    {
+      "id": "zd45zaza424az7358",
+      "title": "Un titre de mariage",
+      "source": "./img/photo1.jpg",
+      "categories": ["Mariage", "Famille"]
+    }
   ]
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Prestation = (props) => {
-  const objet = props.objet;
+const Prestation = ({ objet }) => {
   return (
     <Wrapper>
       <h3>{objet.title}</h3>
