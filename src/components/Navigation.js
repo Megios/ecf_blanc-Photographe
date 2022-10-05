@@ -33,7 +33,7 @@ const Navigation = () => {
 };
 const Li = styled.li`
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 2vw;
   transition: 0.2s;
   &:hover {
     color: #152028;

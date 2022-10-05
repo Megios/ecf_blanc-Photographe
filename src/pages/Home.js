@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import Navigation from "../components/Navigation";
 import img from "../assets/images/backgroundAccueil.jpg";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <Accueil>
-      <HeaderA>
-        <h2>Logo</h2>
-        <Navigation />
-      </HeaderA>
-      <h1>Charles Cantin - photographe</h1>
-    </Accueil>
+    <div>
+      <Accueil>
+        <HeaderA>
+          <h2>Logo</h2>
+          <Navigation />
+        </HeaderA>
+        <h1>Charles Cantin - photographe</h1>
+      </Accueil>
+      <Footer />
+    </div>
   );
 };
 const HeaderA = styled.div`
@@ -25,11 +29,15 @@ const HeaderA = styled.div`
 `;
 const Accueil = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100vh;
   background: center/cover url(${img});
   align-items: center;
   overflow: hidden;
+  h1 {
+    font-size: 3vw;
+  }
 `;
 
 export default Home;

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Card from "../components/Card";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 const Galerie = () => {
   const [data, setData] = useState([]);
@@ -47,12 +48,16 @@ const Galerie = () => {
               .map((photo) => <Card key={Math.random()} photo={photo} />)
           : data.map((photo) => <Card key={Math.random()} photo={photo} />)}
       </WrapperCard>
+      <Footer />
     </Wrapper>
   );
 };
 const WrapperCard = styled.ul`
+  margin: 0;
+  padding: 20px 10px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 const Wrapper = styled.div`
   text-align: center;
@@ -60,9 +65,13 @@ const Wrapper = styled.div`
 const NavTri = styled.ul`
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   li {
+    display: flex;
+    align-items: center;
     list-style-type: none;
+    font-size: 1vw;
   }
 `;
 export default Galerie;

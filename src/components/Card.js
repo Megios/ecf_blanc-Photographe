@@ -12,9 +12,11 @@ const Card = (props) => {
 };
 
 const Wrapper = styled.div`
-  height: 25vw;
-  width: 25vw;
-  background: green;
+  height: 20vw;
+  width: 20vw;
+  background: black;
+  margin: 10px;
+  box-shadow: 0px 1px 15px 0px white;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Prestation from "../components/Prestation";
 import axios from "axios";
+import Footer from "../components/Footer";
 const Offre = () => {
   const [offres, setOffres] = useState([]);
   useEffect(() => {
@@ -17,6 +18,7 @@ const Offre = () => {
       {offres.map((prestation) => (
         <Prestation objet={prestation} />
       ))}
+      <Footer />
     </Wrapper>
   );
 };
