@@ -28,7 +28,6 @@ const Wrapper = styled.div`
   }
 
   &:hover {
-    transform: scale(1.0541);
     transition: 0.2s;
     h3 {
       opacity: 1;
@@ -37,6 +36,9 @@ const Wrapper = styled.div`
   }
   img {
     height: 100%;
+    &:hover {
+      transform: scale(1.0541);
+    }
   }
 `;
 export default Card;
