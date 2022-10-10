@@ -23,6 +23,7 @@ const Offre = () => {
   );
 };
 const Wrapper = styled.div`
+  position: relative;
   font-family: "font-1";
   text-align: center;
   display: flex;

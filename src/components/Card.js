@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import breakpoints from "../commons/breakpoints";
 
 const Card = (props) => {
   const photo = props.photo;
@@ -25,20 +26,33 @@ const Wrapper = styled.div`
   h3 {
     opacity: 0;
     position: absolute;
+    transition: 1s;
   }
 
   &:hover {
-    transition: 0.2s;
     h3 {
       opacity: 1;
       transition: 0.5s;
+      transition-delay: 0.5s;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px;
     }
   }
   img {
     height: 100%;
-    &:hover {
-      transform: scale(1.0541);
-    }
+  }
+  transition: 1s;
+  &:hover {
+    transition: 0.8s ease;
+    transform: scale(1.09);
+  }
+  @media only screen and ${breakpoints.device.sm} {
+    width: 28vw;
+    height: 28vw;
+  }
+  @media only screen and ${breakpoints.device.xs} {
+    width: 80vw;
+    height: 80vw;
   }
 `;
 export default Card;

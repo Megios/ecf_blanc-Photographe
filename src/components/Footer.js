@@ -11,12 +11,18 @@ const Footer = () => {
   );
 };
 const Wrapper = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   background: black;
-  bottom: 0;
   width: 100%;
-  height: 50px;
-  padding-top: 30px;
+  bottom: -100px;
+  height: 80px;
+  padding-top: 20px;
   text-align: center;
+  span {
+    color: white;
+  }
 `;
 
 export default Footer;

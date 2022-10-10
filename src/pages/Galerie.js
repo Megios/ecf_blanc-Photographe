@@ -60,6 +60,7 @@ const WrapperCard = styled.ul`
   justify-content: center;
 `;
 const Wrapper = styled.div`
+  position: relative;
   text-align: center;
 `;
 const NavTri = styled.ul`
@@ -72,6 +73,14 @@ const NavTri = styled.ul`
     align-items: center;
     list-style-type: none;
     font-size: 1vw;
+    &:hover {
+      color: black;
+    }
+  }
+  label {
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 export default Galerie;

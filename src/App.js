@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Offre from "./pages/Offre";
 import { createGlobalStyle } from "styled-components";
 import NovaMono from "./assets/fonts/NovaMono.ttf";
+import Contact from "./pages/Contact";
+import img from "./assets/images/photobackgroundfix.png";
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,6 +16,7 @@ const App = () => {
         <Route path="/offres" element={<Offre />} />
         <Route path="*" element={<Home />} />
         <Route path="/accueil" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
@@ -27,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     margin:0;
     padding:0;
-    background:#47555E;
+    background: fixed center/cover url(${img});
   }
   h2,h1,h3,p,li{
     font-family: 'font-1';
