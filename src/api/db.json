@@ -36,115 +36,134 @@
       "id": "zd45zaza424az7357",
       "title": "Grossesse 4",
       "source": "./img/photo_grossesse4.jpg",
-      "categories": ["Grossesse"]
+      "categories": ["Grossesse"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7359",
       "title": "Un titre de mariage",
       "source": "./img/photo_mariage1.jpg",
-      "categories": ["Mariage", "CouplePortrait"]
+      "categories": ["Mariage", "CouplePortrait"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7355",
       "title": "Un titre de mariage",
       "source": "./img/photo_couple1.jpg",
-      "categories": ["CouplePortrait"]
+      "categories": ["CouplePortrait"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7354",
       "title": "Un titre de mariage",
       "source": "./img/photo_famille1.jpg",
-      "categories": ["Famille"]
+      "categories": ["Famille"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7353",
       "title": "Un titre de mariage",
       "source": "./img/photo_bebe1.jpg",
-      "categories": ["Bébé"]
+      "categories": ["Bébé"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7352",
       "title": "Un titre de mariage",
       "source": "./img/photo_bapteme1.jpg",
-      "categories": ["Baptême"]
+      "categories": ["Baptême"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7351",
       "title": "Un titre de mariage",
       "source": "./img/photo_grossesse1.jpg",
-      "categories": ["Grossesse"]
+      "categories": ["Grossesse"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7341",
       "title": "Un titre de mariage",
       "source": "./img/photo_grossesse2.jpg",
-      "categories": ["Grossesse"]
+      "categories": ["Grossesse"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7342",
       "title": "Un titre de mariage",
       "source": "./img/photo_grossesse3.jpg",
-      "categories": ["Grossesse"]
+      "categories": ["Grossesse"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7343",
       "title": "Un titre de mariage",
       "source": "./img/photo_bapteme2.jpg",
-      "categories": ["Baptême"]
+      "categories": ["Baptême"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7344",
       "title": "Un titre de mariage",
       "source": "./img/photo_bebe2.jpg",
-      "categories": ["Bébé"]
+      "categories": ["Bébé"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7348",
       "title": "Un titre de mariage",
       "source": "./img/photo_bebe3.jpg",
-      "categories": ["Bébé"]
+      "categories": ["Bébé"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7345",
       "title": "Un titre de mariage",
       "source": "./img/photo_famille2.jpg",
-      "categories": ["Famille"]
+      "categories": ["Famille"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7349",
       "title": "Un titre de mariage",
       "source": "./img/photo_famille3.jpg",
-      "categories": ["Famille"]
+      "categories": ["Famille"],
+      "type": "paysage"
     },
     {
       "id": "zd45zaza424az7346",
       "title": "Un titre de mariage",
       "source": "./img/photo_couple2.jpg",
-      "categories": ["CouplePortrait"]
+      "categories": ["CouplePortrait"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7347",
       "title": "Un titre de mariage",
       "source": "./img/photo_couple3.jpg",
-      "categories": ["CouplePortrait"]
+      "categories": ["CouplePortrait"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7330",
       "title": "Un titre de mariage",
       "source": "./img/photo_mariage2.jpg",
-      "categories": ["Mariage"]
+      "categories": ["Mariage"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7331",
       "title": "Un titre de mariage",
       "source": "./img/photo_mariage3.jpg",
-      "categories": ["Mariage"]
+      "categories": ["Mariage"],
+      "type": "portrait"
     },
     {
       "id": "zd45zaza424az7332",
       "title": "Un titre de mariage",
       "source": "./img/photo_mariage4.jpg",
-      "categories": ["Mariage"]
+      "categories": ["Mariage"],
+      "type": "paysage"
     }
   ]
 }

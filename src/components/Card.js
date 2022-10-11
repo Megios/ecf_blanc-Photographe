@@ -6,7 +6,11 @@ const Card = (props) => {
   const photo = props.photo;
   return (
     <Wrapper>
-      <img src={photo.source} alt={photo.title} />
+      {photo.type === "portrait" ? (
+        <img className="portrait" src={photo.source} alt={photo.title} />
+      ) : (
+        <img className="paysage" src={photo.source} alt={photo.title} />
+      )}
       <h3>{photo.title}</h3>
     </Wrapper>
   );
@@ -38,7 +42,10 @@ const Wrapper = styled.div`
       padding: 10px;
     }
   }
-  img {
+  .portrait {
+    width: 100%;
+  }
+  .paysage {
     height: 100%;
   }
   transition: 1s;

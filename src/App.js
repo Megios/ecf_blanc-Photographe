@@ -32,9 +32,8 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
     background: fixed center/cover url(${img});
   }
-  h2,h1,h3,p,li{
+  h2,h1,h3,p,li,button{
     font-family: 'font-1';
-    color:color: #f6efef;
     color: white;
   }
 `;
