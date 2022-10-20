@@ -58,11 +58,11 @@ const Wrapper = styled.div`
       transform: scale(1.09);
     }
   }
-  @media only screen and ${breakpoints.device.sm} {
+  @media only screen and ${breakpoints.sm} {
     width: 28vw;
     height: 28vw;
   }
-  @media only screen and ${breakpoints.device.xs} {
+  @media only screen and ${breakpoints.xs} {
     width: 80vw;
     height: 80vw;
   }
