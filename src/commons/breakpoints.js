@@ -9,4 +9,4 @@ const device = {
   sm: `(max-width:${size.sm})`,
   lg: `(min-width:${size.lg})`,
 };
-export default { device, size };
+export default { device };
