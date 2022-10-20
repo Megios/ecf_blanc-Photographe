@@ -48,10 +48,15 @@ const Wrapper = styled.div`
   .paysage {
     height: 100%;
   }
-  transition: 1s;
   &:hover {
-    transition: 0.8s ease;
-    transform: scale(1.09);
+    box-shadow: 0px 1px 4px 6px white;
+  }
+  img {
+    transition: 1s;
+    &:hover {
+      transition: 0.8s ease;
+      transform: scale(1.09);
+    }
   }
   @media only screen and ${breakpoints.device.sm} {
     width: 28vw;

@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <Wrapper>
       <Header />
-      <h1>Contact</h1>
       <h3>A propos de votre photographe</h3>
       <p>
         Deserunt minim ex aliqua consequat id non fugiat qui est tempor nostrud.

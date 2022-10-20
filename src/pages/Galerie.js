@@ -23,7 +23,6 @@ const Galerie = () => {
   return (
     <Wrapper>
       <Header />
-      <h1>Galerie</h1>
       <NavTri>
         {categories.map((categorie) => (
           <li key={Math.random()}>
@@ -62,6 +61,21 @@ const WrapperCard = styled.ul`
 const Wrapper = styled.div`
   position: relative;
   text-align: center;
+  button {
+    background: transparent;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 15px;
+    box-shadow: 1px 3px 10px 3px black;
+
+    &:hover {
+      box-shadow: 1px 3px 10px 5px black;
+    }
+    &:active {
+      box-shadow: inset 1px 3px 10px 3px black;
+    }
+  }
 `;
 const NavTri = styled.ul`
   display: flex;

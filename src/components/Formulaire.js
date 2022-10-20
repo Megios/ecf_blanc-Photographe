@@ -1,27 +1,113 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import Toast from "./Toast";
 
 const Formulaire = () => {
+  useEffect(() => {
+    if (
+      envoi.nom.valid === true &&
+      envoi.prenom.valid === true &&
+      envoi.email.valid === true &&
+      envoi.message.valid === true
+    ) {
+      envoiApresValidation(envoi);
+      inputRefNom.current.value = "";
+      inputRefPrenom.current.value = "";
+      inputRefEmail.current.value = "";
+      inputRefMessage.current.value = "";
+    }
+  });
+  var [toast, setToast] = useState(false);
+  const inputRefNom = useRef();
+  const inputRefPrenom = useRef();
+  const inputRefEmail = useRef();
+  const inputRefMessage = useRef();
+  const [envoi, setEnvoi] = useState({
+    nom: { content: "", valid: null },
+    prenom: { content: "", valid: null },
+    email: { content: "", valid: null },
+    message: { content: "", valid: null },
+  });
+  function envoiApresValidation(object) {
+    axios
+      .post("http://localhost:3200/contact", { object })
+      .then((res) => console.log(res))
+      .then(setToast(true));
+  }
+  function testVariable() {
+    inputRefNom.current.value
+      ? setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ nom: { content: inputRefNom.current.value, valid: true } },
+        }))
+      : setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ nom: { content: "", valid: false } },
+        }));
+    inputRefPrenom.current.value
+      ? setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ prenom: { content: inputRefPrenom.current.value, valid: true } },
+        }))
+      : setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ prenom: { content: "", valid: false } },
+        }));
+    inputRefEmail.current.value
+      ? setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ email: { content: inputRefEmail.current.value, valid: true } },
+        }))
+      : setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ email: { content: "", valid: false } },
+        }));
+    inputRefMessage.current.value
+      ? setEnvoi((envoi) => ({
+          ...envoi,
+          ...{
+            message: { content: inputRefMessage.current.value, valid: true },
+          },
+        }))
+      : setEnvoi((envoi) => ({
+          ...envoi,
+          ...{ message: { content: "", valid: false } },
+        }));
+  }
+
+  const envoiFormulaire = (e) => {
+    e.preventDefault();
+    testVariable();
+  };
+
   return (
     <Form>
+      {toast ? <Toast></Toast> : null}
       <h2>Nous contacté</h2>
       <FormGroupe>
-        <label id="nom">Votre Nom</label>
-        <input type="text" id="nom" />
+        <label id="nom">Votre Nom*</label>
+        <input ref={inputRefNom} type="text" id="nom" />
+        {envoi.nom.valid === false ? <span>Nom nécessaire</span> : null}
       </FormGroupe>
       <FormGroupe>
         <label id="prenom">Votre Prenom*</label>
-        <input type="text" id="prenom" />
+        <input ref={inputRefPrenom} type="text" id="prenom" />
+        {envoi.prenom.valid === false ? <span>Prenom nécessaire</span> : null}
       </FormGroupe>
       <FormGroupe>
         <label id="email">Votre Email*</label>
-        <input type="text" id="email" />
+        <input ref={inputRefEmail} type="text" id="email" />
+        {envoi.email.valid === false ? <span>email nécessaire</span> : null}
       </FormGroupe>
       <FormGroupe>
         <label id="message">Votre Message*</label>
-        <textarea id="message" rows="5" cols="43" />
+        <textarea ref={inputRefMessage} id="message" rows="5" cols="43" />
+        {envoi.message.valid === false ? <span>Message nécessaire</span> : null}
       </FormGroupe>
-      <button type="submit">Envoyer</button>
+      <button type="submit" onClick={envoiFormulaire}>
+        Envoyer
+      </button>
     </Form>
   );
 };
@@ -34,7 +120,7 @@ const Form = styled.form`
   width: 50%;
   background: rgba(0, 0, 0, 0.4);
   label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   button {
     font-size: 1.2rem;
@@ -47,6 +133,13 @@ const Form = styled.form`
     border: 2px solid white;
     width: 50%;
     padding: 15px 0;
+    box-shadow: 1px 3px 10px 3px black;
+    &:active {
+      box-shadow: inset 1px 3px 10px 3px black;
+    }
+    &:hover {
+      box-shadow: 1px 3px 10px 5px black;
+    }
   }
   input {
     font-size: 1.2rem;
@@ -65,6 +158,7 @@ const Form = styled.form`
     }
   }
   textarea {
+    font-size: 1.2rem;
     background: transparent;
     color: white;
     box-sizing: border-box;
@@ -87,6 +181,9 @@ const FormGroupe = styled.div`
   align-items: start;
   padding: 30px;
   color: white;
+  span {
+    color: #f26c6c;
+  }
 `;
 
 export default Formulaire;

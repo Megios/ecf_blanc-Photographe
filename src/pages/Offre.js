@@ -14,7 +14,7 @@ const Offre = () => {
   return (
     <Wrapper>
       <Header />
-      <h1>Offre</h1>
+      <h1>Nos Offres</h1>
       {offres.map((prestation) => (
         <Prestation objet={prestation} />
       ))}

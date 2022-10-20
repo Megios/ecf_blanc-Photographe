@@ -9,7 +9,6 @@ const Home = () => {
     <div>
       <Accueil>
         <HeaderA>
-          <h2>Logo</h2>
           <Navigation />
         </HeaderA>
         <h1>Charles Cantin - photographe</h1>

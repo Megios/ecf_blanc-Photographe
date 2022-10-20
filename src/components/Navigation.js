@@ -1,10 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const Navigation = () => {
   return (
     <Nav>
+      <Logo />
       <List>
         <NavLink
           to="/accueil"
@@ -40,9 +42,10 @@ const Li = styled.li`
   }
 `;
 const Nav = styled.nav`
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
 
   a {
     border-radius: 30px;

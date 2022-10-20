@@ -6,7 +6,7 @@ const Footer = () => {
     <Wrapper>
       <span>Facebook</span>
       <span>instagram</span>
-      <p>@Copyright Megios Dev</p>
+      <span>@Copyright Megios Dev</span>
     </Wrapper>
   );
 };
@@ -16,9 +16,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   background: black;
   width: 100%;
-  bottom: -100px;
+  bottom: -120px;
   height: 80px;
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   span {
     color: white;

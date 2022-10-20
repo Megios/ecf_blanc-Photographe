@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     background: fixed center/cover url(${img});
+    overflow-x:hidden;
   }
   h2,h1,h3,p,li,button{
     font-family: 'font-1';

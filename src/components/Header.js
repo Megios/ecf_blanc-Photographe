@@ -5,7 +5,6 @@ import Navigation from "./Navigation";
 const Header = () => {
   return (
     <Wrapper>
-      <h2>Logo</h2>
       <Navigation />
     </Wrapper>
   );
